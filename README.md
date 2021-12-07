@@ -27,7 +27,7 @@ pip install -r requirements.txt
 
 ### Train
 
-- You can run training with the following command `./Deep-Learning-Course-2` directory. you must select your device.
+- You can run training with the following command in `./Deep-Learning-Course-2` directory. you must select your device.
 
 `
 python3 train.py --device "cuda"
@@ -45,7 +45,7 @@ python3 test.py --device "cuda"
 
 ### Inference
 
-- For inference, you can run the following command `./Deep-Learning-Course-2` directory.
+- For inference, you can run the following command in `./Deep-Learning-Course-2` directory.
 
 input_img --> input image directory
 
