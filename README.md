@@ -4,9 +4,9 @@
 - [x] model.py
 - [x] config.py
 - [x] fashion_mnist.ipynb
-- [ ] test.py (evaluate)
+- [x] test.py (evaluate)
 - [ ] inference.py
-- [ ] requirements.txt
+- [x] requirements.txt
 
 #
 
