@@ -4,9 +4,9 @@
 - [x] model.py
 - [x] config.py
 - [x] fashion_mnist.ipynb
-- [ ] test.py (evaluate)
+- [x] test.py (evaluate)
 - [ ] inference.py
-- [ ] requirements.txt
+- [x] requirements.txt
 
 #
 
@@ -15,5 +15,14 @@
 - You can run training with the following command. you must select your device.
 
 `
-!python train.py --device "cuda"
+python3 train.py --device "cuda"
+`
+#
+
+### Test
+
+- For evaluation, run the following command. you must select your device.
+
+`
+python3 test.py --device "cuda"
 `
