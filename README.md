@@ -15,5 +15,14 @@
 - You can run training with the following command. you must select your device.
 
 `
-!python train.py --device "cuda"
+python3 train.py --device "cuda"
+`
+#
+
+### Test
+
+- For evaluation, run the following command. you must select your device.
+
+`
+python3 test.py --device "cuda"
 `
