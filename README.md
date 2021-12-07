@@ -5,7 +5,7 @@
 - [x] config.py
 - [x] fashion_mnist.ipynb
 - [x] test.py (evaluate)
-- [ ] inference.py
+- [x] inference.py
 - [x] requirements.txt
 
 #
@@ -25,4 +25,13 @@ python3 train.py --device "cuda"
 
 `
 python3 test.py --device "cuda"
+`
+### Inference
+
+- For inference, you can run the following command.
+
+input_img --> input image directory
+
+`
+python3 inference.py --device cuda --input_img 21.png
 `
