@@ -30,7 +30,7 @@ pip install -r requirements.txt
 - You can run training with the following command in `.Deep-Learning-Course-2/01- Fashion Mnist` directory. you must select your device.
 
 `
-python3 train.py --device "cuda"
+python3 train.py --device cuda
 `
 #
 
@@ -39,7 +39,7 @@ python3 train.py --device "cuda"
 - For evaluation, run the following command in `.Deep-Learning-Course-2/01- Fashion Mnist` directory. you must select your device.
 
 `
-python3 test.py --device "cuda"
+python3 test.py --device cuda
 `
 #
 
