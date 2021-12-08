@@ -1,5 +1,8 @@
 # 01- Fashion Mnist Dataset
 
+- Fashion Mnist dataset classification using Pytorch
+
+
 - [x] train.py
 - [x] model.py
 - [x] config.py
@@ -52,3 +55,10 @@ input_img --> input image directory
 `
 python3 inference.py --device cuda --input_img 21.png
 `
+#
+
+# 02- mnist
+
+- MNIST dataset classification using PyTorch
+
+- [x] mnist.ipynb
