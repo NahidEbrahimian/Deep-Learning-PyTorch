@@ -22,7 +22,7 @@ Dataset contain persian handwritten numbers of 0 to 9
 1- Clone this repository using the following command:
 
 `
-https://github.com/NahidEbrahimian/Deep-Learning-Course-2
+https://github.com/NahidEbrahimian/Deep-Learning-Course-PyTorch
 `
 
 2- In `.Deep-Learning-Course-PyTorch/02-1- Mnist Persian` directory, run the following command to install requirements:
