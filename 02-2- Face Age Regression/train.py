@@ -36,7 +36,6 @@ loss_function = nn.L1Loss()
 
 for epoch in range(epochs):
   train_loss = 0.0
-  train_acc = 0.0
   for images, labels in train_data:
 
     images, labels = images.to(device), labels.to(device)
