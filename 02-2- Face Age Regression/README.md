@@ -10,7 +10,7 @@
 - [x] config.py
 - [x] data_loader.py
 - [x] mnist_persian.ipynb
-- [ ] test.py (evaluate)
+- [x] test.py (evaluate)
 - [x] inference.py
 - [x] requirements.txt
 
@@ -65,10 +65,25 @@ python3 train.py --device cuda --data_path ./crop_part1
 
 ### Test
 
-- For evaluation, run the following command in `.Deep-Learning-Course-PyTorch/02-1- Mnist Persian` directory. you must select your device.
+1- Clone this repository using the following command:
 
 `
-python3 test.py --device cuda --data_path ./MNIST_persian
+https://github.com/NahidEbrahimian/Deep-Learning-Course-PyTorch
+`
+
+2- Download dataset from this link: [utkface-new](https://www.kaggle.com/jangedoo/utkface-new) and put in `.Deep-Learning-Course-PyTorch/02-2- Face Age Regression` directory
+
+
+3- Extract file using the following command:
+
+`
+!unzip -qq utkface-new.zip
+`
+
+4- Run the following command in `.Deep-Learning-Course-PyTorch/02-2- Face Age Regression` directory. you must select your device.
+
+`
+python3 test.py --device cuda --data_path ./crop_part1
 `
 #
 
