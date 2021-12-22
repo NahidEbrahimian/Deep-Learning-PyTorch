@@ -17,6 +17,8 @@
 
 Dataset contain persian handwritten numbers of 0 to 9
 
+dataset link: [persian_mnist](https://drive.google.com/drive/folders/14aDOVDrczXi1uRDb8FMbisJPdiGxNF_2?usp=sharing)
+
 ### Instalation
 
 1- Clone this repository using the following command:
