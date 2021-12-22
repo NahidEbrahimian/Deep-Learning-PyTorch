@@ -1,0 +1,4 @@
+torch
+googledrivedownloader
+opencv-python
+torchvision
