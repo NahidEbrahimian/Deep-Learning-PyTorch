@@ -1,8 +1,6 @@
 ##  Face Age Regression
 
-# Mnist Persian
-
-- Mnist Persian classification using Pytorch
+- Face Age Regression using Pytorch
 
 
 - [x] train.py
