@@ -14,21 +14,6 @@ parser.add_argument("--data_path", type=str)
 args = parser.parse_args()
 device = args.device
 
-def build_model(device):
-  model = models.resnet50(pretrained=True)
-  in_fetures = model.fc.in_features
-  model.fc = nn.Linear(in_fetures, 1)
-  # device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-  model = model.to(device)
-
-  # This freezes layers 1-6 in the total 10 layers of Resnet50
-  ct = 0
-  for child in model.children():
-      ct += 1
-      if ct < 7:
-          for param in child.parameters():
-              param.requires_grad = False
-  return model
 
 def build_dataset(batch_size, data_path):
   train_data = data_loader(data_path)
@@ -45,7 +30,7 @@ def calc_loss(y_pred, labels):
     acc=torch.abs(y_pred - labels.data) / len(y_pred)
     return acc
 
-model = build_model(device)
+model = model()
 _, test_data = build_dataset(64, args.data_path)
 
 wieght_path = './age_regression.pth'
@@ -58,8 +43,8 @@ model.eval()
 test_loss=0.0
 for img, label in test_data:
 
-    img = img.to(device)
-    label = label.to(device)
+    img = img.to(device).float()
+    label = label.to(device).float()
 
     pred = model(img)
     test_loss += calc_loss(pred, label)
