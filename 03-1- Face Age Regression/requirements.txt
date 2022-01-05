@@ -1,7 +1,0 @@
-torch
-googledrivedownloader
-opencv-python
-torchvision
-pandas
-tqdm
-wandb
