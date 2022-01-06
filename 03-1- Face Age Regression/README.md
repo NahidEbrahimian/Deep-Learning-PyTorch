@@ -8,7 +8,7 @@
 - [x] config.yaml.py
 - [x] data_loader.py
 - [x] transfer learning.ipynb
-- [x] parameter setting.ipynb
+- [x] transfer learning-wandb_sweep.ipynb
 - [x] test.py (evaluate)
 - [x] inference.py
 - [x] requirements.txt
