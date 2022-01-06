@@ -45,7 +45,7 @@ pip install -r requirements.txt
 https://github.com/NahidEbrahimian/Deep-Learning-Course-PyTorch
 `
 
-2- Download dataset from this link: [utkface-new](https://www.kaggle.com/jangedoo/utkface-new) and put in `.Deep-Learning-Course-PyTorch/02-2- Face Age Regression` directory
+2- Download dataset from this link: [utkface-new](https://www.kaggle.com/jangedoo/utkface-new) and put in `.Deep-Learning-Course-PyTorch/03-1- Face Age Regression` directory
 
 
 3- Extract file using the following command:
@@ -70,7 +70,7 @@ python3 train.py --device cuda --data_path ./crop_part1
 https://github.com/NahidEbrahimian/Deep-Learning-Course-PyTorch
 `
 
-2- Download dataset from this link: [utkface-new](https://www.kaggle.com/jangedoo/utkface-new) and put in `.Deep-Learning-Course-PyTorch/02-2- Face Age Regression` directory
+2- Download dataset from this link: [utkface-new](https://www.kaggle.com/jangedoo/utkface-new) and put in `.Deep-Learning-Course-PyTorch/03-1- Face Age Regression` directory
 
 
 3- Extract file using the following command:
