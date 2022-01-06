@@ -29,7 +29,7 @@ wieght_path = './age_regression.pth'
 if not os.path.exists(wieght_path):
     gdd.download_file_from_google_drive(file_id='1-WEH9FtTaOl7FmZrWZ9ETTDEK3h8QyC_',
                                         dest_path=wieght_path)
-model = model()
+model = model(device)
 model.load_state_dict(torch.load(wieght_path,  map_location=device))
 model.eval()
 

@@ -30,8 +30,8 @@ def calc_loss(y_pred, labels):
     acc=torch.abs(y_pred - labels.data) / len(y_pred)
     return acc
 
-model = model()
-_, test_data = build_dataset(64, args.data_path)
+model = model(device)
+_, test_data = build_dataset(16, args.data_path)
 
 wieght_path = './age_regression.pth'
 if not os.path.exists(wieght_path):

@@ -26,7 +26,7 @@ def build_dataset(batch_size, data_path):
 
   return train_data, test_data
 
-model = model()
+model = model(device)
 train_data, _ = build_dataset(64, args.data_path)
 optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
 loss_function = nn.L1Loss()
