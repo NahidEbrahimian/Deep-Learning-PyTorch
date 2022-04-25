@@ -16,33 +16,33 @@
 
 1- Clone this repository using the following command:
 
-`
+```
 https://github.com/NahidEbrahimian/Deep-Learning-Course-PyTorch
-`
+```
 
 2- In `.Deep-Learning-Course-PyTorch/01- Fashion Mnist` directory, run the following command to install requirements:
 
-`
+```
 pip install -r requirements.txt
-`
+```
 #
 
 ### Train
 
 - You can run training with the following command in `.Deep-Learning-Course-PyTorch/01- Fashion Mnist` directory. you must select your device.
 
-`
+```
 python3 train.py --device cuda
-`
+```
 #
 
 ### Test
 
 - For evaluation, run the following command in `.Deep-Learning-Course-PyTorch/01- Fashion Mnist` directory. you must select your device.
 
-`
+```
 python3 test.py --device cuda
-`
+```
 #
 
 ### Inference
@@ -51,6 +51,6 @@ python3 test.py --device cuda
 
 input_img --> input image directory
 
-`
+```
 python3 inference.py --device cuda --input_img 21.png
-`
+```
