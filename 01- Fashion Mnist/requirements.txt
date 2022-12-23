@@ -1,3 +1,0 @@
-torch
-googledrivedownloader
-opencv-python
