@@ -2,9 +2,8 @@
 
 - [x] train.ipynb
 - [x] make_dataset.ipynb
-- [ ] test.py (evaluate)
-- [ ] inference.py
-- [ ] telegram_bot
+- [x] model.py
+- [x] telegram_bot
 - [ ] requirements.txt
 
 #
