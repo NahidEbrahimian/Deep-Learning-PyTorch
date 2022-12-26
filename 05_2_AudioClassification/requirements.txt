@@ -1,0 +1,5 @@
+torch
+googledrivedownloader
+torchaudio
+tqdm
+pytelegrambotapi
