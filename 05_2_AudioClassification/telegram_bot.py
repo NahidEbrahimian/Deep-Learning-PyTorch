@@ -22,7 +22,7 @@ model = M5(n_output = num_classes).to(device)
 model.load_state_dict(torch.load("/content/drive/MyDrive/04-AudioClassification/audio_classifier_weights_best.pth"))
 model.eval()
 
-bot = telebot.TeleBot("5923238800:AAEMlCjnzo7KXS4XtVKQ7rMWdfeSUUQDla4")
+bot = telebot.TeleBot(" ")
 
 @bot.message_handler(commands=['start'])
 def start(messages):
