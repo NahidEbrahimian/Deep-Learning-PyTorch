@@ -2,7 +2,7 @@ import numpy as np
 import torch
 import telebot
 import torchaudio # for speech
-from model import M5
+from model2 import M5
 
 # Device
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -19,16 +19,17 @@ else:
 label_map = np.load('label_map.npy',allow_pickle='TRUE')
 num_classes = len(label_map)
 model = M5(n_output = num_classes).to(device)
-model.load_state_dict(torch.load("/content/drive/MyDrive/04-AudioClassification/audio_classifier_weights_best.pth"))
+model.load_state_dict(torch.load("/content/drive/MyDrive/04-AudioClassification/best_weights2.pth"))
 model.eval()
 
-bot = telebot.TeleBot(" ")
+bot = telebot.TeleBot("5923238800:AAEMlCjnzo7KXS4XtVKQ7rMWdfeSUUQDla4")
 
 @bot.message_handler(commands=['start'])
 def start(messages):
-    bot.send_message(messages.chat.id, f'welcome dear {messages.from_user.first_name} ')
-    bot.send_message(messages.chat.id, f'***Audio Classification***')
-    bot.send_message(messages.chat.id, f'Please send me your voice😊')
+    bot.send_message(messages.chat.id, f'Welcome, dear {messages.from_user.first_name}🌼')
+    # bot.send_message(messages.chat.id, f'***Audio Classification***')
+    bot.send_message(messages.chat.id, f'Please send me a voice :)')
+
 
 @bot.message_handler(content_types=['voice'])
 def voice(message):
